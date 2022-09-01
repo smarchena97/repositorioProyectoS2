@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="/app/volver" th:object="${libro}">
+
+<span th:text="${libro.autor}"></span>
+<br>
+<span th:text="${libro.titulo}"></span>
+<br>
+<span th:text="${libro.ISBN}"></span>
+<br>
+<input type="submit" value="Volver">
+
+
+</form>
+
+</body>
+</html>
